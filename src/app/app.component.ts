@@ -11,6 +11,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+// @ngModules group Angular code into blocks of functionality  
   
 export class AppComponent {
   title = 'My MTA Stop Info';
