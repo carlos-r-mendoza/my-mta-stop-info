@@ -1,6 +1,8 @@
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 
+require('dotenv').config();
+
 server.connection({
   host: 'localhost',
   port: 8000
