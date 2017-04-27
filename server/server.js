@@ -1,5 +1,6 @@
 const Hapi = require('hapi');
 const server = new Hapi.Server();
+const routes = require('./routes/routes');
 
 require('dotenv').config();
 
@@ -7,6 +8,9 @@ server.connection({
   host: 'localhost',
   port: 8000
 });
+
+// register routes
+server.route(routes);
 
 server.start((err) => {
   if (err) {
